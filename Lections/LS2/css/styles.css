@@ -107,7 +107,9 @@ p, a {
 .divback {
     color: red;
     background-image: url(heart.jpg);
-    background-size: 100px 50px;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: left top;
 }
+
+/*background-size: contain/cover/;*/
