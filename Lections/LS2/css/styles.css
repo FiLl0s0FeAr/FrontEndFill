@@ -1,7 +1,100 @@
-* {
+/* * {
     color: red;
-}
+} */
 
 h1 {
     color: green;
+}
+
+p {
+    font-size: 20px;
+}   
+
+.text1.orange {
+    font-size: 10px;
+    color: blue;
+}
+
+#text2 {
+    color: green;
+}
+
+.orange {
+    color: orange;
+}
+
+/* div class block */
+
+/*обращаемся ко всем p которые в block*/
+/* .block p {  
+    color: yellow;
+} */
+
+/* обращаемся ко всем p которые являються дочерними для block */
+.block > p {  
+    color: yellow;
+}
+
+/*Родственный селектор. p после тега a*/
+a + p {
+    color: blue;
+}
+
+/*Родственный селектор. p после тега p после тега a*/
+/* a + p + p {
+    color: blue;
+} */
+
+
+/* .orange + ul{
+    color:lawngreen;
+} */
+
+/*если не указываем для li ничего, по умолчанию элементы наследуют стили родительского тега списка*/
+/* li {
+    font-size: 12px;
+} */
+
+/*Пвсевдо классы*/
+/*задаём цвет 3му элементу списка*/
+li:nth-child(3) {
+    color: red;
+}
+
+/*четные*/
+li:nth-child(even) {
+    color: green;
+}
+
+/*нечетные*/
+li:nth-child(odd) {
+    color: blue;
+}
+
+li:first-child {
+    color: orange;
+}
+
+li:last-child {
+    color: gray;
+}
+
+/*первый элемент в классе, теге body и т.п.*/
+p:first-child {
+    color: purple;
+}
+
+/*стили через атрибуты*/
+li[data-art] {
+    color: hotpink;
+}
+
+a[href="https://www.google.com/"] {
+    font-size: 22px;
+    color: rgb(102, 211, 238);
+}
+
+/*Группировка селекторов*/
+p, a {
+    color: salmon;
 }
