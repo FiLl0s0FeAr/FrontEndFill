@@ -98,3 +98,16 @@ a[href="https://www.google.com/"] {
 p, a {
     color: salmon;
 }
+
+.back {
+    background-color: green;
+    color: white;
+}
+
+.divback {
+    color: red;
+    background-image: url(heart.jpg);
+    background-size: 100px 50px;
+    background-repeat: no-repeat;
+    background-position: left top;
+}
