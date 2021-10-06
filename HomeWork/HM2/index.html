@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <style>
+            blockquote {
+                margin: 0;
+                color: red;
+            }
+
+            blockquote p {
+                padding: 15px;
+                background: #eee;
+                border-radius: 5px;
+            }
+
+            blockquote p::before {
+                content: '\201C';
+            }
+
+            blockquote p::after {
+                content: '\201D'; 
+            }
+    </style>
+
+    <title>LS2</title>
+</head>
+<body>
+    <!--Artibute style has highest priority-->
+    <figure>
+        <blockquote style="color: blue;">
+            <p>
+             HTML-элемент &lt;blockquote&gt; (от англ. Block Quotation) указывает на то, что заключённый в нем текст является развёрнутой цитатой. Обычно он (текст) визуально выделяется наклонным (смотри Примечание, где говорится о том, как это изменить). URI на источник цитаты можно указать в атрибуте cite, тогда как текстовое представление источника может быть задано элементом &lt;cite&gt;.
+            </p>
+         </blockquote>
+         <figcaption>—https://developer.mozilla.org/</figcaption>
+    </figure>
+
+    <div class="text-box">
+        <h3>Покрасьте меня в розовый цвет (color:pink).</h3>
+        <p>Данный элемент должен остаться неоформленным.</p>
+        <p id='greycol'>Покрасьте меня в серый цвет (color:grey).</p>
+        <div>Данный элемент должен остаться неоформленным.</div>
+        <div><p>Покрасьте меня в красный цвет (color:red).</p></div>
+        <h3>Данный элемент должен остаться неоформленным.</h3>
+        <p>Покрасьте меня в зеленый цвет (color:green).</p>
+        <p class='yellow'>Покрасьте меня в желтый цвет (color:yellow).</p>
+    </div>
+    
+
+    <div class="holder">
+        <h1>Title</h1>
+        <ul class="list">
+          <li>
+            <a href="#">link1</a>
+            <ul>
+              <li><a href="#">link2</a></li>
+              <li><a href="#">link3</a></li>
+            </ul>
+          </li>
+          <li><a href="https://www.youtube.com/">link4</a></li>
+          <li><a href="https://validator.w3.org/">link5</a></li>
+          <li><a href="#">link6</a></li>
+        </ul>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, accusamus.</p>
+        <h1>Title</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+      
+    <div id="Images" style="margin: auto; background-color: green; height: 500px; width: 800px;">
+    </div>
+</body>
+</html>

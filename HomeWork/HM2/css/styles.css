@@ -1,0 +1,73 @@
+/*Level 1*/
+blockquote {
+    margin: 0;
+    color: green;
+}
+
+blockquote p {
+    padding: 15px;
+    background: #eee;
+    border-radius: 5px;
+}
+
+blockquote p::before {
+    content: '\201C';
+}
+
+blockquote p::after {
+    content: '\201D';
+}
+
+
+/*DIV block*/
+h3:first-child {
+    color: pink;
+}
+
+#greycol {
+    color:grey;
+}
+
+/*
+div:nth-child(5) > p
+or*/
+div > div p {
+    color: red;
+}
+
+div + h3 + p {
+    color:green;
+}
+
+p[class="yellow"] {
+    color:yellow;
+}
+
+/*Level 2*/
+a[href^="https"] {
+    color: red;
+}
+
+/*
+div.holder > ul > li:nth-child(4)
+or*/
+div.holder > ul > li:last-child {
+    background-color: green;
+}
+
+/*div.holder > ul + p
+or*/
+ul + p {
+    font-size: 26px;
+}
+
+
+/*Level 3*/
+#Images {
+    background-image: url(../images/grass.png), url(../images/lamp.png), url(../images/hedgehog.png), url(../images/ponjick.png), url(../images/house.jpg);
+    background-repeat: repeat-x, repeat-x, repeat-y, repeat-y, no-repeat;
+    background-position: left bottom, center top, left top, right top, center;
+    background-size: 200px 175px, 30px 40px, 20px 20px, 20px 20px, 300px 200px;
+    height: 100px, 30px, 500px, 500px, 100px;
+    width: 100px, 800px, 20px, 20px, 100px;
+}
