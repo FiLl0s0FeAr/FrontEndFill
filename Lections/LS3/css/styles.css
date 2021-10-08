@@ -1,0 +1,53 @@
+.header {
+    background-color: magenta;
+    margin-bottom: 50px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+.wrapper {
+    overflow: hidden;
+}
+
+.block-1 {
+    background-color: green;
+    border: 1px solid black;
+    text-align: center;
+    height: 100px;
+    padding: 10px 0;
+    margin-bottom: 50px;
+    width: 33.33333%;
+    float: left;
+}
+
+.block-2 {
+    background-color: orange;
+    border: 1px dashed black;
+    height: 70px;
+    padding: 20px;
+    margin-bottom: 50px;
+    width: 33.33333%;
+    float: left;
+}
+
+.block-3 {
+    background-color: red;
+    border: 3px dotted black;
+    height: 50px;
+    padding: 15px 30px;
+    margin-bottom: 50px;
+    width: 33.33333%;
+    float: left;
+}
+
+.footer {
+    background-color: blue;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 26px;
+} 
+
