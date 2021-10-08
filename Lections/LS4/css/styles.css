@@ -1,0 +1,28 @@
+.wrapper {
+    background-color: blue;
+    margin: 50px;
+    padding: 50px;
+    top: 50px;
+}
+
+.block {
+    width: 150px;
+    height: 150px;
+    text-align: center;
+}
+
+.block-1 {
+    background: red;
+}
+
+.block-2 {
+    background: green;
+}
+
+.block-3 {
+    background: purple;
+}
+
+.block-4 {
+    background: orange;
+}
