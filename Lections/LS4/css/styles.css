@@ -2,7 +2,7 @@
     background-color: blue;
     margin: 50px;
     padding: 50px;
-    top: 50px;
+    position: relative;
 }
 
 .block {
@@ -13,16 +13,26 @@
 
 .block-1 {
     background: red;
+    position: absolute;
+    top: 40px;
+    right: 60px;
 }
 
 .block-2 {
     background: green;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
 .block-3 {
     background: purple;
+    position: relative;
+    z-index: 3;
 }
 
 .block-4 {
     background: orange;
+    top: 100px;
+    left: 50px;
 }
