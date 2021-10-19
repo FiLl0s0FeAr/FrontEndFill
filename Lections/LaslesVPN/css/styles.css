@@ -2,13 +2,15 @@ body {
     font-family: 'Rubik', sans-serif;
 }
 
+/*HEADER*/
+
 .header {
-    max-width: 1140px;
+    max-width: 1170px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center ;
-    padding: 50px 0;
+    padding: 50px 15px;
     margin-bottom: 40px;
 }
 
@@ -31,6 +33,11 @@ body {
     color: #4F5665;
     font-size: 16px;
     text-decoration: none;
+    transition: color .3s linear;
+}
+
+.navigation__link:hover {
+    color: #F53855;
 }
 
 .sign-in {
@@ -40,6 +47,11 @@ body {
     background: none;
     border: none;
     cursor: pointer;
+    transition: color .3s ease-in-out;
+}
+
+.sign-in:hover {
+    color: #F53855;
 }
 
 .account {
@@ -60,4 +72,44 @@ body {
     align-items: center;
     justify-content: center;
     margin-left: 30px;
+    transition: all .3s ease-in-out;
+}
+
+.sign-up:hover {
+    color: #fff;
+    background-color: #F53855;
+}
+
+/*MAIN*/
+.heading {
+    max-width: 1240px;
+    margin: 0 auto 103px;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+}
+
+.heading__title {
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 70px;
+    color: #0B132A;
+    margin: 0 0 20px;
+}
+
+.heading__title span {
+    font-weight: bold;
+    color:#F53855;
+}
+
+.heading__description {
+    font-size: 16px;
+    line-height: 30px;
+    color: #4F5665;
+    margin-bottom: 50px;
+}
+
+.heading__description p {
+    margin: 0 0 20px;
 }
