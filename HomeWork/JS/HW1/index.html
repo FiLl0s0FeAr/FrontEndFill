@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--assign: evaluation-->
+    <script>
+        var a = 5;  
+        var b, c;
+
+        b = (a * 5);  
+        b = (c = (b/2)); 
+        /*
+            1) b = a * 5 = 5 * 5 = 25
+            2) c = b / 2 = 25 / 2 = 12.5
+            3) b = c = 12.5
+        */
+        console.log('a =', a)
+        console.log('b =',  b)
+        console.log('c = ', c)
+    </script>
+
+    <!-- semicolon: error -->
+    <script>
+        //let a = 5 let c = a * 5
+        //let a = 5 var x        
+    </script>
+    
+    <!--semicolon: mistake-->
+    <script>
+        //idk
+    </script>
+
+    <!--Number: age-->
+    <script>
+        let age = prompt("What is your age?");
+        alert("Your age is " + age);
+    </script>
+
+    <!--Number: temperature-->
+    <script>
+        let temperatureC = prompt("what temperature is it now (°C)?");
+
+        //Formula convertetion °C to F: (0°C × 9/5) + 32 = 32°F
+        let temperatureF = (temperatureC * 9 / 5) + 32;
+        alert("Temperature in Fahrenheit equals " + temperatureF);
+    </script>
+
+    <!--Number: divide-->
+    <script>
+        let firstNumber = Number(prompt("Write a first number for calculation"));
+        let secondNumber = Number(prompt("Write a second number for calculation"));
+        let symbol = prompt("Write a symbol for calculation (could be: \"+ - * /\"");
+        let result = 0;
+
+        switch(symbol) {
+            case '+':
+                result = firstNumber + secondNumber;        
+                alert("Sum of 2 numbers equals " + result);
+                break;
+            case '-':
+                result = firstNumber - secondNumber;        
+                alert("Subtraction of 2 numbers equals " + result);
+                break;
+            case '*':
+                result = firstNumber * secondNumber;        
+                alert("Multiplication of 2 numbers equals " + result);
+                break;
+            case '/':
+                result = firstNumber / secondNumber; 
+                result = Math.floor(result)       
+                alert("Division of 2 numbers equals " + result + " (rounded down)");
+                break;
+            default:
+                alert("Тot expected inputs");
+                break;
+        }
+    </script>
+    
+    <!--Number: odd-->
+    <script>
+        let x = Number(prompt("Enter a number"));
+        if (typeof x == 'number') {
+            alert("YES");
+        }
+    </script>
+    <!--Number: odd-->
+    <script>
+        let x = Number(prompt("Enter a integer number"));
+        if (Number.isInteger(x)) {
+            if (x % 2 == 0){
+                alert("Even number");
+            }
+            else {
+                alert("Odd number");
+            }
+        }
+        else {
+            alert("Exception: number is not integer");
+        }
+    </script>
+
+    <!--String: greeting-->
+    <script>
+        let userName = prompt("What is your name");
+        alert("Hi " + userName);
+    </script>
+
+    <!--String: lexics-->
+    <script>
+        let questionToUser = prompt("Write your answer: 1000 - 7");
+        if (questionToUser.includes("993")){
+            alert("True");
+        }
+        else {
+            alert("False");
+        }
+    </script>
+
+    <!--confirm-->
+    <script>
+        console.log(typeof(confirm));
+
+        var isAdmin = confirm("Вы - администратор?");
+        alert(typeof(isAdmin));
+    </script>
+
+    <!--Boolean-->
+    <script>
+        var isAdmin = confirm("Вы - администратор?");
+        alert(isAdmin);
+    </script>
+
+    <!--Boolean: if-->
+    <script>
+        var isMan = confirm("Вы - мужчина?");
+        if (isMan){
+            alert("Вы - мужчина!");
+        }
+        else {
+            alert("Вы женщина!")
+        }
+    </script>
+
+    <!--Array: real-->
+    <script>
+        //Phone numbers in Pnohe book. Data in DB. List of anime, games, books.
+    </script>
+
+    <!--Array: booleans-->
+    <script>
+        let isAdmin = false, isMan = true;
+        let arrBool = [isAdmin, isMan];
+    </script>
+
+    <!--Array: plus-->
+    <script>
+        let isAdmin = 1, isMan = 2;
+        let arrPlus = [isAdmin, isMan];
+        
+        arrPlus[2] = arrPlus[0] + arrPlus[1];
+        // or arrPlus.push(arrPlus[0] + arrPlus[1]);
+        alert("Array " + arrPlus);
+    </script>
+
+    <!--Array: plus string-->
+    <script>
+        let isAdmin = "1", isMan = "2";
+        let arrPlus = [isAdmin, isMan];
+        
+        arrPlus[2] = arrPlus[0] + arrPlus[1];
+        // or arrPlus.push(arrPlus[0] + arrPlus[1]);
+        alert("Array " + arrPlus); //1,2,12
+    </script>
+
+    <!--Object: real-->
+    <script>
+        let user = {
+            userName: "Fill",
+            job: "AQA"
+        };
+    </script>
+
+    <!--Object: change-->
+    <script>
+        let user = {
+            userName: "Fill",
+            job: "AQA"
+        };
+
+        user.userName = "FiLL";
+        user.job = "Automation Quality Assurance"
+    </script>
+
+    <!--Comparison if-->
+    <script>
+        var age = prompt("Сколько вам лет?");
+
+        if (age < 18){
+            alert("школьник");
+        }
+        else if ((age > 18) && (age < 30)){
+            alert("молодеж");
+        }
+        else if ((age > 30) && (age < 45)){
+            alert("зрелость");
+        }
+        else if ((age > 45) && (age < 60)){
+            alert("закат");
+        }
+        else if (age > 60){
+            alert("как пенсия?");
+        }
+        else if (age < 0) {
+            alert("ещё не родился, получаеться");
+        }
+        else {
+            alert("то ли киборг, то ли ошибка"); 
+        }
+    </script>
+
+    <!--Comparison: sizes-->
+    <script>
+        let itemConvert = Number(prompt("Convert from Russian size to USA: 1- Outerwear , 2- Lingerie, 3- Socks"));
+        let sizeValue = 0;
+        switch (itemConvert) {
+            case(1):
+                sizeValue = Number(prompt("Sizes: 40, 42, 44, 46, 48, 50, 52, 54"));
+                if (sizeValue == 40) {
+                    alert("S");
+                }
+                else if (sizeValue == 42) {
+                    alert("M");
+                }
+                else if ((sizeValue == 44) || (sizeValue == 46) || (sizeValue == 48)) {
+                    alert("L");
+                }
+                else if ((sizeValue == 50) || (sizeValue == 52)) {
+                    alert("XL");
+                }
+                else if (sizeValue == 54) {
+                    alert("XXL");
+                }
+                else {
+                    alert("Not expected value");
+                }
+                break;
+
+            case(2):
+                sizeValue = Number(prompt("Sizes: 40, 42, 44, 46, 48, 50, 52, 54, 56"));
+                if (sizeValue == 40) {
+                    alert("S");
+                }
+                else if (sizeValue == 42) {
+                    alert("8");
+                }
+                else if (sizeValue == 44) {
+                    alert("10");
+                }
+                else if (sizeValue == 46) {
+                    alert("12");
+                }
+                else if (sizeValue == 48) {
+                    alert("14");
+                }
+                else if (sizeValue == 50) {
+                    alert("16");
+                }
+                else if (sizeValue == 52) {
+                    alert("18");
+                }
+                else if (sizeValue == 54) {
+                    alert("20");
+                }
+                else if (sizeValue == 56) {
+                    alert("22");
+                }
+                else {
+                    alert("Not expected value");
+                }
+                break;
+            
+            case(3):
+                sizeValue = Number(prompt("Sizes: 21, 23, 25, 27"));
+                if (sizeValue == 21) {
+                    alert("8 or 8 1/2");
+                }
+                else if (sizeValue == 23) {
+                    alert("9 or 9 1/2");
+                }
+                else if (sizeValue == 25) {
+                    alert("10 or 10 1/2");
+                }
+                else if (sizeValue == 27) {
+                    alert("11");
+                }
+                else {
+                    alert("Not expected value");
+                }
+                break;
+            
+            default:
+                alert("Not expected value");
+                break;
+        }
+    </script>
+
+    <!--Comparison: object-->
+    <script>
+        //Можно создать обьект Socks в котором ключём будет выступать страна, а значением - список размером этой страны
+    </script>
+
+    <!--Ternary-->
+    <script>
+        let isMan = confirm("Вы - мужчина?");
+        (isMan) ? alert("Вы мужчина!") : alert("Вы женщина");
+    </script>
+
+    <!--Синий пояс Number: flats-->
+    <script>
+        let floors = 5; 
+        let porches = 10;
+        let apartmentsPerFloor = 3;
+        let apartment = parseInt(prompt("Apartment number", Math.random() * 100 | 0), 10); 
+
+        // Floor relative to the house
+        let floor = Math.ceil(apartment / apartmentsPerFloor);
+
+        // Entrance relative to the house.
+        let porch = Math.ceil(floor / floors);
+
+        // Floor relative to the entrance
+        floor -= (porch - 1) * floors;
+
+        alert("Apartment with number " + apartment + " located at entrance № " + porch + " on " + floor + " floor");
+    </script>
+</body>
+</html>
