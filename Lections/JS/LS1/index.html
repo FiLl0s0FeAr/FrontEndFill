@@ -7,7 +7,11 @@
     <title>Document</title>
 </head>
 <body>
-    <script src="one.js"></script>
-    <script src="two.js"></script>
+    <script>
+        function check(num1, num2, num3) {
+            num = (num1 + num2 + num3) / 3
+            return (num > 0 ? `${num}` : num < 0 ? 'Exception: num < 0' : 'Exception :num = 0');
+        }
+    </script>
 </body>
 </html>
